@@ -53,7 +53,7 @@ public class HelloController {
 		return "redirect:/hello";
 	}
 	
-	/* 비추!!!!! 기술비침투 전력 위배*/
+	/* 비추!!!!! 기술비침투 전략 위배*/
 	@RequestMapping("/hello7") 
 	public void hello7(
 		HttpServletRequest request,
