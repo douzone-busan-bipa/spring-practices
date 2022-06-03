@@ -68,6 +68,14 @@ public class GuestbookRepository {
 		return list;
 	}
 	
+	public void delete(Long no, String password) {
+		GuestbookVo vo = new GuestbookVo();
+		vo.setNo(no);
+		vo.setPassword(password);
+		
+		delete(vo);
+	}
+	
 	public boolean delete(GuestbookVo vo) {
 		boolean result = false;
 
@@ -157,5 +165,5 @@ public class GuestbookRepository {
 		} 
 		
 		return conn;
-	}	
+	}
 }
