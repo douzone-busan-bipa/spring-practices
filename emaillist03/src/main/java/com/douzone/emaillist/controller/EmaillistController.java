@@ -9,6 +9,7 @@ public class EmaillistController {
 	@ResponseBody
 	@RequestMapping("")
 	public String index() {
+		
 		return "EmaillistController.index()";
 	}
 }
