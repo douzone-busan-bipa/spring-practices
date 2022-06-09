@@ -14,16 +14,14 @@ public class ExampleController {
 	 */
 	private static final Log LOG = LogFactory.getLog(ExampleController.class);
 	
-	@RequestMapping( "/ex1" )
+	@RequestMapping("/ex1")
 	@ResponseBody
 	public String ex1() {
-		
 		/**
 		 *  이 예제에서는 logback.xml 에서,
 		 *  
 		 *  1. consoleAppender 와 root logger 만 세팅해서 테스트 해 볼 수 있습니다. 
 		 *  2. root logger의 level="DEBUG" 조정해 봅니다.
-		 *  
 		 *  3. 테스트 해보면,
 		 *     DEBUG  > INFO > WARN > ERROR 순으로 로그가 출력 되는 것을 확인할
 		 *     수 있습니다.
