@@ -16,7 +16,6 @@ public class FileUploadService {
 	
 	public String restore(MultipartFile multipartFile) {
 		String url = null;
-		
 		try {
 			if(multipartFile.isEmpty()) {
 				return url;
@@ -26,7 +25,6 @@ public class FileUploadService {
 			if(!restoreDirectory.exists()) {
 				restoreDirectory.mkdirs();
 			}
-			
 			
 			String originFileName = multipartFile.getOriginalFilename();
 			String extName = originFileName.substring(originFileName.lastIndexOf('.')+1);
