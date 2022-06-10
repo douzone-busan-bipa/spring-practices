@@ -38,9 +38,15 @@ public class MyAspect {
 		/* before */
 		System.out.println("---Around(Before) Advice---");
 		
-		// PoinCut 메소드 실행
+		/*
+		 * PoinCut 메소드 실행
+		 */
+		// 파라미터 가로채기
+		// Object[] params = {"Camera"};
+		// Object result = pjp.proceed(params);
+
 		Object result = pjp.proceed();
-		
+
 		/* after */
 		System.out.println("---Around(After) Advice---");
 		
