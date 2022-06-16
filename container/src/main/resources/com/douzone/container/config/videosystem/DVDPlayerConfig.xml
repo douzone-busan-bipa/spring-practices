@@ -59,6 +59,6 @@
 		</constructor-arg>
 	</bean>
 
-	<!-- 08. 빈설정: 생성자 Wiring Collection  -->
+	<!-- 08. 빈설정: 생성자 Wiring Collection -->
 
 </beans>
